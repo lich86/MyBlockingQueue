@@ -5,7 +5,7 @@ import java.util.Queue;
 
 public class MyBlockingQueue<E> {
 
-    private Queue<E> queue = new LinkedList<E>();
+    private final Queue<E> queue = new LinkedList<>();
     private final int maxCapacity;
 
     public MyBlockingQueue(int maxCapacity) {
